@@ -1,0 +1,7 @@
+C:\Users\мой\Desktop\ОАИП\Practic5\obj\Debug\Practic5.csproj.AssemblyReference.cache
+C:\Users\мой\Desktop\ОАИП\Practic5\obj\Debug\Practic5.csproj.CoreCompileInputs.cache
+C:\Users\мой\Desktop\ОАИП\Practic5\bin\Debug\Practic5.exe.config
+C:\Users\мой\Desktop\ОАИП\Practic5\bin\Debug\Practic5.exe
+C:\Users\мой\Desktop\ОАИП\Practic5\bin\Debug\Practic5.pdb
+C:\Users\мой\Desktop\ОАИП\Practic5\obj\Debug\Practic5.exe
+C:\Users\мой\Desktop\ОАИП\Practic5\obj\Debug\Practic5.pdb

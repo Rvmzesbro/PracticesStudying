@@ -1,0 +1,7 @@
+C:\Users\мой\Desktop\ОАИП\AbstractClass\bin\Debug\AbstractClass.exe.config
+C:\Users\мой\Desktop\ОАИП\AbstractClass\bin\Debug\AbstractClass.exe
+C:\Users\мой\Desktop\ОАИП\AbstractClass\bin\Debug\AbstractClass.pdb
+C:\Users\мой\Desktop\ОАИП\AbstractClass\obj\Debug\AbstractClass.csproj.AssemblyReference.cache
+C:\Users\мой\Desktop\ОАИП\AbstractClass\obj\Debug\AbstractClass.csproj.CoreCompileInputs.cache
+C:\Users\мой\Desktop\ОАИП\AbstractClass\obj\Debug\AbstractClass.exe
+C:\Users\мой\Desktop\ОАИП\AbstractClass\obj\Debug\AbstractClass.pdb
