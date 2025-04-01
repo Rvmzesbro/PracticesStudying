@@ -1,0 +1,7 @@
+C:\Users\мой\Desktop\ОАИП\Practic8\bin\Debug\Practic8.exe.config
+C:\Users\мой\Desktop\ОАИП\Practic8\bin\Debug\Practic8.exe
+C:\Users\мой\Desktop\ОАИП\Practic8\bin\Debug\Practic8.pdb
+C:\Users\мой\Desktop\ОАИП\Practic8\obj\Debug\Practic8.csproj.AssemblyReference.cache
+C:\Users\мой\Desktop\ОАИП\Practic8\obj\Debug\Practic8.csproj.CoreCompileInputs.cache
+C:\Users\мой\Desktop\ОАИП\Practic8\obj\Debug\Practic8.exe
+C:\Users\мой\Desktop\ОАИП\Practic8\obj\Debug\Practic8.pdb
