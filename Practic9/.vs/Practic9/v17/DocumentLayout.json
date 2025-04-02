@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\practic9\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\practic9\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|solutionrelative:practic9\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|c:\\users\\web2\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\practicesstudying\\practic9\\practic9\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|solutionrelative:practic9\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|c:\\users\\web2\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\practicesstudying\\practic9\\practic9\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|solutionrelative:practic9\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|c:\\users\\web2\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\practicesstudying\\practic9\\practic9\\models\\correctinputuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D0C2E8-1D9D-48C9-B745-C6C9D33107B3}|Practic9\\Practic9.csproj|solutionrelative:practic9\\models\\correctinputuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "CorrectInputUser.cs",
+              "DocumentMoniker": "C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\Practic9\\Models\\CorrectInputUser.cs",
+              "RelativeDocumentMoniker": "Practic9\\Models\\CorrectInputUser.cs",
+              "ToolTip": "C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\Practic9\\Models\\CorrectInputUser.cs",
+              "RelativeToolTip": "Practic9\\Models\\CorrectInputUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:39:17.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\Practic9\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Practic9\\MainWindow.xaml",
@@ -34,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\Practic9\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Practic9\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\web2\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\PracticesStudying\\Practic9\\Practic9\\MainWindow.xaml.cs",
               "RelativeToolTip": "Practic9\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAwwCMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAArwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T15:46:15.279Z",
               "EditorCaption": ""

@@ -28,3 +28,4 @@ C:\Users\web2\Desktop\Новая папка\PracticesStudying\Practic9\Practic9\
 C:\Users\web2\Desktop\Новая папка\PracticesStudying\Practic9\Practic9\obj\Debug\Practic9.csproj.CoreCompileInputs.cache
 C:\Users\web2\Desktop\Новая папка\PracticesStudying\Practic9\Practic9\obj\Debug\Practic9.exe
 C:\Users\web2\Desktop\Новая папка\PracticesStudying\Practic9\Practic9\obj\Debug\Practic9.pdb
+C:\Users\web2\Desktop\Новая папка\PracticesStudying\Practic9\Practic9\bin\Debug\Resources\Police.jpg

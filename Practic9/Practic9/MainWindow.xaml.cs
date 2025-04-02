@@ -27,6 +27,7 @@ namespace Practic9
     public partial class MainWindow : Window
     {
         public List<Education> Educations { get; set; } = new List<Education>();
+        public List<CorrectInputUser> correctInputUsers { get; set; } = new List<CorrectInputUser>();
         public byte[] Avatar { get; set; }
         public MainWindow()
         {
@@ -55,6 +56,63 @@ namespace Practic9
             DataContext = null;
             DataContext = this;
 
+        }
+
+        private void Rate_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+            if (string.IsNullOrWhiteSpace(SalaryScale.Text) || string.IsNullOrWhiteSpace(ExtraCharge.Text) || string.IsNullOrWhiteSpace(Rate.Text))
+            {
+                Salary.Text = "";
+            }
+            else
+            {
+                double Result = double.Parse(Rate.Text) * double.Parse(SalaryScale.Text) + double.Parse(ExtraCharge.Text);
+                Salary.Text = Result.ToString();
+            }
+            
+            
+        }
+
+        private void SalaryScale_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Rate.Text) || string.IsNullOrWhiteSpace(ExtraCharge.Text) || string.IsNullOrWhiteSpace(SalaryScale.Text))
+            {
+                Salary.Text = "";
+            }
+            else
+            {
+                double Result = double.Parse(Rate.Text) * double.Parse(SalaryScale.Text) + double.Parse(ExtraCharge.Text);
+                Salary.Text = Result.ToString();
+            }
+        }
+
+        private void ExtraCharge_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(SalaryScale.Text) || string.IsNullOrWhiteSpace(Rate.Text) || string.IsNullOrWhiteSpace(ExtraCharge.Text))
+            {
+                Salary.Text = "";
+            }
+            else
+            {
+                double Result = double.Parse(Rate.Text) * double.Parse(SalaryScale.Text) + double.Parse(ExtraCharge.Text);
+                Salary.Text = Result.ToString();
+            }
+        }
+
+        private void Rate_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !double.TryParse(e.Text, out _);
+        }
+
+        private void SalaryScale_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !double.TryParse(e.Text, out _);
+        }
+
+        private void ExtraCharge_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !double.TryParse(e.Text, out _);
         }
     }
 }
