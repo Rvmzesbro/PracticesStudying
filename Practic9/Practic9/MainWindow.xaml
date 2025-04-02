@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practic9"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="500" MinWidth="810">
+        Title="MainWindow" Height="450" Width="800" MinHeight="500" MinWidth="810" >
     
     
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -257,12 +257,12 @@
                             <TextBlock Text="Зар.плата, тн.:"/>
                         </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" Margin="10 5 0 0">
+                        <StackPanel Orientation="Horizontal" x:Name="SpPosition" Margin="10 5 0 0">
                             <TextBox x:Name="Rate" 
-                                     PreviewTextInput="Rate_PreviewTextInput" 
+                                     TextChanged="Rate_TextChanged"
                                      Width="70" Margin="0 0 10 0" 
-                                     Text="{Binding CorrectInputUser.Rate}" 
-                                     TextChanged="Rate_TextChanged">
+                                     Text="{Binding Rate}" 
+                                    >
                                 <TextBox.InputBindings>
                                     <KeyBinding Command="NotACommand" Key="Space"/>
                                 </TextBox.InputBindings>
@@ -271,10 +271,11 @@
                                        Margin="0 0 0 0" 
                                        VerticalAlignment="Center"/>
                             <TextBox x:Name="SalaryScale" 
-                                     PreviewTextInput="SalaryScale_PreviewTextInput" 
+                                      
                                      Width="70" 
                                      Margin="10 0 10 0" 
-                                     TextChanged="SalaryScale_TextChanged">
+                                     TextChanged="SalaryScale_TextChanged"
+                                     Text="{Binding SalaryScale}">
                                 <TextBox.InputBindings>
                                     <KeyBinding Command="NotACommand" Key="Space"/>
                                 </TextBox.InputBindings>
@@ -284,7 +285,7 @@
                             <TextBox x:Name="ExtraCharge" 
                                      Width="70"
                                      Margin="10 0 10 0" 
-                                     PreviewTextInput="ExtraCharge_PreviewTextInput" 
+                                     Text="{Binding ExtraCharge}"
                                      TextChanged="ExtraCharge_TextChanged">
                                 <TextBox.InputBindings>
                                     <KeyBinding Command="NotACommand" Key="Space"/>
@@ -293,9 +294,9 @@
                             <TextBlock Text="=" 
                                        Margin="0 0 0 0" 
                                        VerticalAlignment="Center"/>
-                            <TextBox x:Name="Salary" 
-                                     Width="70" Margin="10 0 0 0" 
-                                     IsReadOnly="True"/>
+                            <TextBox x:Name="Salary"
+                                     IsReadOnly="True"  
+                                     Width="70" Margin="10 0 0 0"/>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Margin="10">

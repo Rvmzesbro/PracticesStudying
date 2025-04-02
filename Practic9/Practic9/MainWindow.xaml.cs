@@ -29,6 +29,7 @@ namespace Practic9
         public List<Education> Educations { get; set; } = new List<Education>();
         public List<CorrectInputUser> correctInputUsers { get; set; } = new List<CorrectInputUser>();
         public byte[] Avatar { get; set; }
+        CorrectInputUser CorrectInputUser { get; set; } = new CorrectInputUser();
         public MainWindow()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace Practic9
 
             DgEduaction.ItemsSource = Educations;
             App.MainWindow = this;
+            SpPosition.DataContext = CorrectInputUser;
             DataContext = this;
             
         }
@@ -100,19 +102,6 @@ namespace Practic9
             }
         }
 
-        private void Rate_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            e.Handled = !double.TryParse(e.Text, out _);
-        }
-
-        private void SalaryScale_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            e.Handled = !double.TryParse(e.Text, out _);
-        }
-
-        private void ExtraCharge_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            e.Handled = !double.TryParse(e.Text, out _);
-        }
+        
     }
 }
