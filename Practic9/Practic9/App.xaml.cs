@@ -13,5 +13,6 @@ namespace Practic9
     /// </summary>
     public partial class App : Application
     {
+        public static MainWindow MainWindow;
     }
 }

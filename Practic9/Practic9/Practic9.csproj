@@ -69,6 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Education.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +94,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\po.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Police.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

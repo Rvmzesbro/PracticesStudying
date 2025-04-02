@@ -6,28 +6,55 @@
         xmlns:local="clr-namespace:Practic9"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinHeight="500" MinWidth="810">
+    
+    
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-       
-        
-        
-        
-        <StackPanel Grid.Column ="0" Margin="10 10 10 10">
-            <Image Source="C:\Users\web2\Pictures\Police.jpg"/>
-            <Button Content="Выбрать фото" Margin="0 20 0 0"/>
-            <Button Content="Штатное расписание" Margin="0 40 0 0"/>
-            <Button Content="Отпуска работника" Margin="0 10 0 0"/>
-            <Button Content="Командировки работника" Margin="0 10 0 0"/>
+
+
+
+        <StackPanel Grid.Column="0">
+            <Grid Margin="10 10 10 10" VerticalAlignment="Top">
+                <Image x:Name="Choose" Source="{Binding Avatar}" />
+            </Grid>
+
+            <StackPanel VerticalAlignment="Bottom" Height="155" HorizontalAlignment="Left" Margin="10 0 0 0">
+                <Button Margin="0 10 0 0" Width="90" HorizontalAlignment="Left" x:Name="ChoosePhoto" Click="ChoosePhoto_Click">
+                    <StackPanel>
+                        <Image />
+                        <TextBlock Text="Выбрать фото"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="0 40 0 0" Width="170">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/pe.png" Width="20"/>
+                        <TextBlock Text="Штатное расписание"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="0 10 0 0" Width="170">
+                    <StackPanel Orientation="Horizontal" Margin="-10 0 0 0">
+                        <Image Source="/Resources/z.png" Width="20"/>
+                        <TextBlock Text="Отпуска работника"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="0 10 0 0" Width="170">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/c.png" Width="20"/>
+                        <TextBlock Text="Командировки работника"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
         </StackPanel>
+       
 
         <StackPanel Grid.Column="1">
             <TabControl x:Name="TabThis" Height="330">
                 <TabItem Header="Основные данные">
-                    <Grid>
+                    <Grid VerticalAlignment="Center">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
@@ -100,16 +127,110 @@
 
                 </TabItem>
 
-                <TabItem Header="Дополнительная информация">
-
+                <TabItem Header="Дополнительные данные">
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Text="ИНН:" Margin="10 10 0 5"/>
+                        <TextBox Margin="10 0 0 5" Width="100" HorizontalAlignment="Left"/>
+                        <GroupBox Header="Место регистрации" Margin="10 0 10 10">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Индекс:" Margin="10 0 0 5"/>
+                                    <TextBlock Text="Адрес:" Margin="87 0 0 5"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox Width="100" Margin="10 0 0 10"/>
+                                    <TextBox Width="330" Margin="30 0 10 10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Место жительства фактическое" Margin="10 0 10 0">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Индекс:" Margin="10 0 0 5"/>
+                                    <TextBlock Text="Адрес:" Margin="87 0 0 5"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox Width="100" Margin="10 0 0 10"/>
+                                    <TextBox Width="330" Margin="30 0 10 10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                            <TextBlock Text="Телефоны:" Margin="10 0 10 0"/>
+                            <TextBox Width="422"/>
+                        </StackPanel>
+                    </StackPanel>
                 </TabItem>
 
                 <TabItem Header="Состав семьи">
-
+                    
                 </TabItem>
 
                 <TabItem Header="Должности">
-                    <TextBlock>Text</TextBlock>
+                    <StackPanel VerticalAlignment="Center">
+                        
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <TextBlock Text="Штат. расписание:" Margin="0 0 10 0"/>
+                            <ComboBox Width="80" Margin="0 0 30 0">
+                                <ComboBoxItem Content="001"/>
+                                <ComboBoxItem Content="002"/>
+                                <ComboBoxItem Content="003"/>
+                            </ComboBox>
+                            <TextBlock Text="Характер работы:" Margin="0 0 10 0"/>
+                            <ComboBox Width="170">
+                                <ComboBoxItem Content="Постоянно"/>
+                                <ComboBoxItem Content="Никогда"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <TextBlock Text="Принят на работу с:" Margin="0 0 5 0"/>
+                            <TextBox Width="100" Margin="0 0 15 0"/>
+                            <TextBlock Text="по:" Margin="0 0 5 0"/>
+                            <TextBox Width="100"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10 10 10 0">
+                            <TextBlock Text="Ставка:" Margin="0 0 55 0"/> 
+                            <TextBlock Text="Оклад, тн.:" Margin="0 0 42 0"/>
+                            <TextBlock Text="Надбавка, тн.:" Margin="0 0 22 0"/>
+                            <TextBlock Text="Зар.плата, тн.:"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10 5 0 0">
+                            <TextBox Width="70" Margin="0 0 10 0"/>
+                            <TextBlock Text="*" Margin="0 0 0 0" VerticalAlignment="Center"></TextBlock>
+                            <TextBox Width="70" Margin="10 0 10 0"/>
+                            <TextBlock Text="+" VerticalAlignment="Center"></TextBlock>
+                            <TextBox Width="70" Margin="10 0 10 0"/>
+                            <TextBlock Text="=" Margin="0 0 0 0" VerticalAlignment="Center"></TextBlock>
+                            <TextBox Width="70" Margin="10 0 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <TextBlock Text="Договор №" Margin="0 0 5 0"/>
+                            <TextBox Width="80" Margin="0 0 10 0"/>
+                            <TextBlock Text="от" Margin="0 0 5 0"/>
+                            <TextBox Width="80"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="10 0 10 0">
+                            <TextBlock Text="Основание приема на работу" Margin="0 0 0 5"/>
+                            <TextBox />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <CheckBox Content="Уволен"/>
+                            <Image Source="C:\Users\web2\Downloads\OAIP.png" Margin="238 0 0 0" Width="200"/>
+
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10 10 10 10">
+                            <Button Content="Приказ о приеме на работу" Margin="163 0 0 0 " Width="160"/>
+                            <Button Content="Приказ об увольнении" Margin="15 0 0 0" Width="160"/>
+                        </StackPanel>
+                        
+                    </StackPanel>
                 </TabItem>
 
                 <TabItem Header="Документы">
@@ -117,10 +238,87 @@
                 </TabItem>
 
                 <TabItem Header="Образование">
+                    <StackPanel Margin="10">
+                        <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                            <TextBlock Text="Код документа:" Margin="0 0 10 0"/>
+                            <ComboBox Width="80">
+                                <ComboBoxItem Content="001"/>
+                                <ComboBoxItem Content="002"/>
+                                <ComboBoxItem Content="003"/>
+                            </ComboBox>
+                            <TextBlock Text="Год окончания:" Margin="145 0 10 0"/>
+                            <TextBox Width="80"/>
+                        </StackPanel>
 
+                        <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                            <TextBlock Text="Учреждение:" Margin="0 0 23 0"/>
+                            <TextBox Width="400"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                            <TextBlock Text="Квалификация:" Margin="0 0 11 0"/>
+                            <TextBox Width="400"/>
+                        </StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                            <TextBlock Text="Специальность:" Margin="0 0 7 0"/>
+                            <TextBox Width="400"/>
+                        </StackPanel>
+                        
+                        <StackPanel>
+                            
+                                <DataGrid Height="130" x:Name="DgEduaction" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Документы" Binding="{Binding Id}"/>
+                                        <DataGridTextColumn Width="200" Header="Учреждение" Binding="{Binding Name}"/>
+                                        <DataGridTextColumn Header="Квалификация" Width="126" Binding="{Binding Cfalification}"/>
+                                        <DataGridTextColumn Header="Специальность" Binding="{Binding Special}"/>
+                                    </DataGrid.Columns>
+                                    
+                                </DataGrid>
+                                
+                            
+                            
+                        </StackPanel>
+
+                        <StackPanel Margin="0 5 0 0">
+                            <Image Source="C:\Users\web2\Downloads\OAIP.png" Width="250" HorizontalAlignment="Left" Margin="0 0 0 0"/>
+                        </StackPanel>
+
+                    </StackPanel>
                 </TabItem>
 
             </TabControl>
+
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <Button Width="170">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/po.png" Width="20" Margin="-10 0 0 0"/>
+                        <TextBlock Text="Поощрение работника"/>
+                    </StackPanel>
+                </Button>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <Button Width="170">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/p.png" Width="20"/>
+                        <TextBlock Text="Печать личной карточки"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="70" Margin="200 0 0 0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Green" Text="✔"/>
+                        <TextBlock Text="OK"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="70" Margin="10 0 0 0" Click="Button_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Red" Text="❌"/>
+                        <TextBlock Text="Отмена"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
         </StackPanel>
 
         
