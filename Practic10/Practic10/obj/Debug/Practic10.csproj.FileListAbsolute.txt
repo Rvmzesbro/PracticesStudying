@@ -1,0 +1,15 @@
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\bin\Debug\Practic10.exe.config
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\bin\Debug\Practic10.exe
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\bin\Debug\Practic10.pdb
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.csproj.AssemblyReference.cache
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\MainWindow.g.cs
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\App.g.cs
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10_MarkupCompile.cache
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10_MarkupCompile.lref
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\MainWindow.baml
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.g.resources
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.Properties.Resources.resources
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.csproj.GenerateResource.cache
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.csproj.CoreCompileInputs.cache
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.exe
+C:\Users\web2\Desktop\VisualStudioProjects\Practic10\Practic10\obj\Debug\Practic10.pdb
