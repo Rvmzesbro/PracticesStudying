@@ -29,7 +29,8 @@
               "ToolTip": "C:\\Users\\web2\\Desktop\\VisualStudioProjects\\Practic10\\Practic10\\MainWindow.xaml",
               "RelativeToolTip": "Practic10\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-07T08:15:13.62Z"
+              "WhenOpened": "2025-04-07T08:15:13.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -37,9 +38,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\web2\\Desktop\\VisualStudioProjects\\Practic10\\Practic10\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Practic10\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\web2\\Desktop\\VisualStudioProjects\\Practic10\\Practic10\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Practic10\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwDIAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\web2\\Desktop\\VisualStudioProjects\\Practic10\\Practic10\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "Practic10\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAYwJQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T08:15:13.57Z",
               "EditorCaption": ""

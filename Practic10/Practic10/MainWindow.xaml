@@ -6,6 +6,26 @@
         xmlns:local="clr-namespace:Practic10"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinHeight="400" MinWidth="800">
+
+    
+        <!--<StackPanel Margin="20" VerticalAlignment="Center">
+            <TextBlock Text="Введите имя:" Margin="0,0,0,5"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Введите дату рождения:" Margin="0,0,0,5"/>
+            <DatePicker x:Name="BirthDatePicker" Margin="0,0,0,10"/>
+
+            <Button Content="Сгенерировать" Click="GenerateButton_Click" Margin="0,10,0,10" Height="30"/>
+
+            <TextBlock Text="Логин:" FontWeight="Bold"/>
+            <TextBlock x:Name="LoginTextBlock" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Пароль:" FontWeight="Bold"/>
+            <TextBlock x:Name="PasswordTextBlock"/>
+        </StackPanel>-->
+
+
+
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -58,7 +78,7 @@
                 <TextBlock FontSize="20"
                            Margin="0 0 0 0"
            >Введите/выберите<LineBreak/>дату рождения</TextBlock>
-                <DatePicker Width="200"
+                <DatePicker x:Name="DPBirthDay" Width="200"
                          Height="40"
                          Margin="78 0 0 0"
                          BorderBrush="LightBlue"/>
@@ -74,19 +94,22 @@
                         BorderBrush="LightBlue"
                         BorderThickness="2"
                         CornerRadius="5">
-                    <Button Content="Сгенерировать логин" 
+                    <Button x:Name="BTLogin"
+                            Content="Сгенерировать логин" 
                             Background="White"
                             BorderBrush="White"
                             Width="200"
-                            Height="40"/>
+                            Height="40"
+                            Click="BTLogin_Click"/>
                 </Border>
             </StackPanel>
-            
+
             <StackPanel Margin="0 20 0 0">
                 <TextBlock Text="Ваш логин"
                            HorizontalAlignment="Center"
                            Margin="0 0 0 10"/>
-                <TextBox Width="150"
+                <TextBox x:Name="TBLogin"
+                         Width="150"
                          Height="40"
                          BorderBrush="LightBlue"/>
             </StackPanel>
@@ -97,11 +120,13 @@
                         BorderBrush="LightBlue"
                         BorderThickness="2"
                         CornerRadius="5">
-                    <Button Content="Сгенерировать пароль" 
+                    <Button x:Name="BTPassword"
+                            Content="Сгенерировать пароль" 
                             Background="White"
                             BorderBrush="White"
                             Width="200"
-                            Height="40"/>
+                            Height="40"
+                            Click="BTPassword_Click"/>
                 </Border>
             </StackPanel>
 
@@ -109,11 +134,13 @@
                 <TextBlock Text="Ваш пароль"
                            HorizontalAlignment="Center"
                            Margin="0 0 0 10"/>
-                <TextBox Width="150"
+                <TextBox x:Name="TBPassword" 
+                         Width="150"
                          Height="40"
                          BorderBrush="LightBlue"/>
             </StackPanel>
         </StackPanel>
 
     </Grid>
+
 </Window>
