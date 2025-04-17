@@ -72,6 +72,7 @@ namespace Practic11.Pages
         {
             dispatcherTimer.Stop();
             TBSelect.Text = "";
+            TBInput.Text = "";
         }
 
 

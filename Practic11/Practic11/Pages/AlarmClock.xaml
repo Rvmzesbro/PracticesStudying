@@ -4,44 +4,44 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Practic11.Pages"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AlarmClock">
 
     <Grid Background="Black">
 
         <Border Width="50"
-         Height="25"
-         CornerRadius="3" 
-         BorderBrush="White"
-         BorderThickness="2"
-         HorizontalAlignment="Left"
-        VerticalAlignment="Top"
-        Margin="10">
-            <Button x:Name="BTBack" 
-             Width="50" 
-             Height="25" 
-             Click="BTBack_Click"
+             Height="25"
+             CornerRadius="3" 
              BorderBrush="White"
-            Background="White">
+             BorderThickness="2"
+             HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="10">
+            <Button x:Name="BTBack" 
+                 Width="50" 
+                 Height="25" 
+                 Click="BTBack_Click"
+                 BorderBrush="White"
+                Background="White">
                 <TextBlock Text="Back"
-            Margin="0 -3 4 0"
-                   FontSize="15"
-                   FontWeight="SemiBold"
-                   FontFamily="Courier New"/>
+                Margin="0 -3 4 0"
+                       FontSize="15"
+                       FontWeight="SemiBold"
+                       FontFamily="Courier New"/>
             </Button>
         </Border>
 
         <TextBlock Text="Будильник"
-            Foreground="White"
-            FontSize="30"
-            FontWeight="SemiBold"
-            FontFamily="Courier New"
-            Margin="10"
-            Width="170"
-            Height="30"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Top"/>
+                Foreground="White"
+                FontSize="30"
+                FontWeight="SemiBold"
+                FontFamily="Courier New"
+                Margin="10"
+                Width="165"
+                Height="30"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"/>
 
 
         <TextBlock x:Name="TBSelect"
@@ -52,10 +52,12 @@
                 HorizontalAlignment="Center"
                 Margin="0 0 0 180"
                VerticalAlignment="Center"/>
+
+
         <StackPanel VerticalAlignment="Center"
-            HorizontalAlignment="Center">
-
-
+            HorizontalAlignment="Center"
+                    Margin="0 50 0 0">
+            
             <StackPanel>
 
                 <Border BorderBrush="White" 
@@ -63,15 +65,44 @@
                     CornerRadius="5"
                     Width="200"
                     Height="40">
-                    <TextBox x:Name="TBInput"
+                    <DatePicker x:Name="DPInput"
                          Width="198"
                          Height="38"
                          Background="White"
                          BorderBrush="White"
                          BorderThickness="1"
-                         
+                         FontWeight="SemiBold"
                          FontSize="20"/>
                 </Border>
+
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0 10 0 0">
+                    <TextBlock Text="Время:"
+                               FontSize="25"
+                               Foreground="White"
+                               FontFamily="Courier New"
+                               FontWeight="SemiBold"
+                               Margin="0 0 10 0"/>
+                    <ComboBox x:Name="CBHourse"
+                              Width="55"
+                              Height="30"
+                              FontSize="20"
+                                FontFamily="Courier New"
+                                FontWeight="SemiBold"/>
+                    <TextBlock Text=":"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="SemiBold"
+                               FontFamily="Courier New"/>
+                    <ComboBox x:Name="CBMinuts"
+                              FontSize="20"
+                              FontFamily="Courier New"
+                              FontWeight="SemiBold"
+                              Width="55"
+                                Height="30"/>
+                </StackPanel>
+
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
@@ -84,14 +115,15 @@
                     Background="Orange"
                     Margin="0 15 10 0"
                     CornerRadius="15">
-                    <Button x:Name="BT_Cancel"
+                    <Button x:Name="BT_Off"
                         Height="40"
                         Width="190"
                         BorderBrush="Transparent"
                         Background="Transparent"
-                        Click="BT_Cancel_Click">
+                            Click="BT_Off_Click"
+                        >
                         <TextBlock x:Name="TBCancel"
-                               Text="Отмена"
+                               Text="Выключить"
                                Foreground="White"
                                FontSize="20"
                                FontFamily="Courier New"
@@ -106,18 +138,19 @@
                 Background="Orange"
                 Margin="0 15 0 0"
                 CornerRadius="15">
-                    <Button x:Name="BT_Timer"
+                    <Button x:Name="BT_On"
                     Height="40"
                     Width="190"
                     BorderBrush="Transparent"
                     Background="Transparent"
-                    Click="BT_Timer_Click">
+                    Click="BT_On_Click">
                         <TextBlock x:Name="TBAlarm"
-                           Text="Старт"
+                           Text="Включить"
                            Foreground="White"
                            FontSize="20"
                            FontFamily="Courier New"
-                           FontWeight="SemiBold"/>
+                           FontWeight="SemiBold"
+                           />
                     </Button>
                 </Border>
 
